@@ -3,7 +3,7 @@ layout: post
 title: "youth trad song weekend 2018"
 date: 2018-01-08 15:27:38 000Z
 categories:
-draft: true
+draft: false
 ---
 
 another yts, come and gone.

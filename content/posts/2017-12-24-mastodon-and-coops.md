@@ -3,7 +3,7 @@ layout: post
 title: "mastodon and coops"
 date: 2017-12-24 17:25:58 000Z
 categories:
-draft: true
+draft: false
 ---
 
 ## *or: why social.coop gets it right*

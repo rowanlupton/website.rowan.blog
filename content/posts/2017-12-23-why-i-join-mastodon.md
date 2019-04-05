@@ -2,8 +2,8 @@
 layout: post
 title: "why I join Mastodon"
 date: 2017-12-23 20:00:00 000Z
-categories: 
-draft: true
+categories:
+draft: false
 ---
 
 I've [joined Mastodon](https://joinmastodon.org) four times. The first was in October or November 2016, on [mastodon.social](https://mastodon.social), when [@shel](https://cybre.space/@shel) first joined and told all of her friends; I stuck around for a bit, but only had two or so friends on it ([@shel](https://cybre.space/@shel) and [@ebeth](https://witches.town/@ebeth)), and I had a large social group on Twitter, so i went back to 'birdsite' (Twitter, per bits of the fediverse).

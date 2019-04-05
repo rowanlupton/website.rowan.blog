@@ -3,7 +3,7 @@ layout: post
 title: "controversial opinions, part 1"
 date: 2018-01-11 16:46:39 000Z
 categories:
-draft: true
+draft: false
 ---
 
 alright. friends.

@@ -3,7 +3,7 @@ layout: post
 title: "yet another explanation of Mastodon"
 date: 2018-01-08 21:00:25 000Z
 categories:
-draft: true
+draft: false
 ---
 
 The situation: you've seen people talking about Mastodon. Maybe you're intrigued, maybe you're not. Either way, when they've tried to explain it to you, you've been confused, turned off, or maybe even a little angry that they won't shut up about it.

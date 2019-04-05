@@ -3,7 +3,7 @@ layout: post
 title: "Braindump on Contra Dancing"
 date: 2018-01-19 16:09:32 000Z
 categories:
-draft: true
+draft: false
 ---
 
 I've been in the contra scene since I was born; my parents met at a contra dance, and their main social community is based off of it, so it was kind of unavoidable. I'm also a person with a lot of thoughts and opinions, so here are a bunch of them in no particular order.

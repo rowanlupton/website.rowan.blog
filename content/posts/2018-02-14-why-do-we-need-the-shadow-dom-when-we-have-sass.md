@@ -3,7 +3,7 @@ layout: post
 title: "Why do we need the Shadow DOM when we have SASS?"
 date: 2018-02-14 17:31:16 000Z
 categories:
-draft: true
+draft: false
 ---
 
 n.b. if you're not a web developer and aren't interested in being one, this post may not be for you. lmk if you want a follow-up that'll try to explain things accessibly!

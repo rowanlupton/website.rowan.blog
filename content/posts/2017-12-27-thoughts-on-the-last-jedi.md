@@ -3,7 +3,7 @@ layout: post
 title: "thoughts on the last jedi"
 date: 2017-12-27 06:03:07 000Z
 categories:
-draft: true
+draft: false
 ---
 
 ##or: since when do i cry at star wars movies

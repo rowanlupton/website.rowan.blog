@@ -3,7 +3,7 @@ layout: post
 title: "Self-promotion"
 date: 2018-02-07 14:05:01 000Z
 categories:
-draft: true
+draft: false
 ---
 
 I hate self-promotion. It feels gross, and it feels like I should be letting people come to me, and it feels like a huge imposition on all of my friends.

@@ -3,7 +3,7 @@ layout: post
 title: "Off-silo blog and social reach"
 date: 2018-02-07 14:18:51 000Z
 categories:
-draft: true
+draft: false
 ---
 
 As expected, when I started writing on a standalone blog instead of long facebook posts, interaction with things I said dropped.

@@ -3,7 +3,7 @@ layout: post
 title: "What the shit is the Shadow DOM, anyway?"
 date: 2018-02-15 13:51:02 000Z
 categories:
-draft: true
+draft: false
 ---
 
 Shadow DOM: the next frontier in web development.
