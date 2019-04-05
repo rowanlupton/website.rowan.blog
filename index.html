@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="generator" content="Hugo 0.54.0" />
+  <meta charset="utf-8">
+  <title>
+    
+    Rowan&#39;s salt box
+  </title>
+
+  
+  
+  
+  <link rel="stylesheet" href="/scss/main.css" media="screen">
+</head><body><header class="site-header">
+    <div class="inner">
+        <a href="/" class="site-title">
+            [logo]
+        </a>
+        <span id="menus">
+            <nav class="site-header-nav">
+                [nav menu]
+            </nav>
+            
+            <a href="#menu-open"
+                role="button"
+                id="menu-close"
+                aria-expanded="false"
+                aria-controls="menu"
+                aria-label="Close main navigation menu"></a>
+
+            
+        </span>
+        <a href="#menus"
+            class="hamburger"
+            role="button"
+            id="menu-open"
+            aria-expanded="false"
+            aria-controls="menu"
+            aria-label="Open main navigation menu"></a>
+    </div>
+</header><main id="main" class="main outer">
+<div class="inner">
+    <section id="posts">
+      
+    </section>
+</div>
+
+        </main><section id="sidebar">
+    &lt;?php if ( is_active_sidebar( 'sidebar-upper' ) ) :
+        dynamic_sidebar( 'sidebar-upper' );
+    else : ?>
+        <section id="sidebar-upper">
+            <h1>Footprints</h1>
+            &lt;?php echo recent_posts();?>
+        </section>
+    &lt;?php endif; ?>
+
+    &lt;?php if ( is_active_sidebar( 'sidebar-lower' ) ) : ?>
+        &lt;?php dynamic_sidebar( 'sidebar-lower' ); ?>
+    &lt;?php endif; ?>
+</section></body>
+</html>
