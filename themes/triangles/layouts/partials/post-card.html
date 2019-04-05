@@ -1,0 +1,8 @@
+<div class="post-card" style="background-image: url(http://placekitten.com/1000/{{ add 500 .index }})">
+    <a href="{{ .context.RelPermalink }}" class="inner">
+        <div class="content">
+            <h2>{{ .context.Title | safeHTML }}</h2>
+            <p>{{ .context.Summary | safeHTML }}</p>
+        </div>
+    </a>
+</div>

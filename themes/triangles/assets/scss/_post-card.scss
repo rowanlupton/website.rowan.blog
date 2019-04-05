@@ -1,0 +1,88 @@
+section#posts .post-card {
+    height: $post-card-height;
+
+    @media screen and (max-width: $break-sm) {
+        border-top: $border-width solid $color-primary;
+    }
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .inner {
+        flex-grow: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-light;
+        clip-path: polygon(
+            0% 100%,
+            50% 100%,
+            calc(50% + ((#{$post-card-height} / 2) * #{$angle})) 50%,
+            50% 0%,
+            0% 0%);
+        @media screen and (max-width: $break-sm) {
+            clip-path: polygon(
+                0% 30%,
+                0% 100%,
+                100% 100%,
+                100% 30%,
+                50% 20%);
+        }
+
+        filter: opacity(0.85);
+        &, &>*, h1 {
+            transition: filter $transition-length;
+        }
+        .content {
+            @media screen and (max-width: $break-sm) {
+                height: 70%;
+                position: absolute;
+                bottom: 0;
+
+                * {
+                    margin: 0;
+                }
+
+                h2 {
+                    margin-bottom: 1vh;
+                }
+            }
+            @media screen and (min-width: calc(#{$break-sm} - 1px)) {
+                width: 50%;
+            }
+            padding: 2rem;
+            word-break: break-word;
+        }
+
+        &:hover, &:focus {
+            h1 {
+                color: $color-secondary;
+                filter: brightness(1);
+            }
+
+            filter: opacity(1);
+        }
+    }
+    &:nth-child(even) {
+        .inner {
+
+            @media screen and (min-width: calc(#{$break-sm} - 1px)) {
+                clip-path: polygon(
+                    100% 100%,
+                    50% 100%,
+                    calc(50% - ((#{$post-card-height} / 2) * #{$angle})) 50%,
+                    50% 0%,
+                    100% 0%);
+
+                .content {
+                    margin-left: 50%;
+                }
+            }
+        }
+    }
+}

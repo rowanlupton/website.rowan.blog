@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="inner">
+    <section id="posts">
+      {{ range $index, $element := first 10 .Pages }}
+        {{ partial "post-card.html" (dict "context" . "index" $index) }}
+      {{ end }}
+    </section>
+</div>
+{{ end }}
+
+

@@ -1,0 +1,41 @@
+/*
+* COLORS
+*/
+$color-primary: #FF4400;
+$color-secondary: #3914AF;
+$color-dark: #000000;
+$color-light: #FFFFFF;
+
+/* rudimentary dark theme */
+// $color-primary: #3914AF;
+// $color-secondary: #FF4400;
+// $color-dark: #FFFFFF;
+// $color-light: #000000;
+
+/*
+* TYPOGRAPHY
+*/
+$font-base-size: 14px;
+$font-sans-serif: "Playfair Display SC", sans-serif;
+$font-sans-serif-condensed: "Playfair Display SC", sans-serif;
+$font-serif: "Stint Ultra Expanded", serif;
+$font-weight-light: normal;
+$font-weight-medium: bold;
+$font-weight-heavy: bolder;
+$font-style-normal: normal;
+$font-style-italic: italic;
+$line-height: 1.2;
+$header-line-height: 1;
+
+/*
+* NUMBERS
+*/
+$break-lg: 1244px;
+$break-md: 1000px;
+$break-sm: 767px;
+$header-height: 80px;
+$post-card-height: 400px;
+$angle: 0.75;
+$border-width: 3px;
+
+$transition-length: 0.2s ease-in-out; // LOL I FUCKING WISH

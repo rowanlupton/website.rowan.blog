@@ -1,0 +1,82 @@
+.dark-theme {
+    header.site-header {
+
+        &:before {
+            background-color: $color-secondary;
+        }
+
+        .inner #menus {
+            background-color: $color-dark;
+
+            #menu-nav-ctas {
+                li:first-child>a {
+                    color: $color-primary;
+                    background-color: $color-dark;
+                    border-color: $color-primary;
+
+                    &:hover {
+                        color: $color-secondary;
+                        background-color: $color-dark;
+                        border-color: $color-secondary;
+                    }
+                }
+                li:last-child>a {
+                    color: $color-dark;
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+
+                    &:hover {
+                        color: $color-dark;
+                        background-color: $color-secondary;
+                        border-color: $color-secondary;
+                    }
+                }
+            }
+
+            .menu-social-media-container ul li a {
+                color: $color-primary;
+
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+
+    main#main {
+        .post-card {
+            a {
+                background-color: $color-dark;
+                p {
+                    color: $color-light;
+                }
+
+                &:hover {
+                    h2 { color: $color-light; }
+                }
+            }
+        }
+    }
+
+    section#sidebar {
+        border-color: $color-secondary;
+
+        section {
+            background-color: lighten($color-secondary, 45%);
+
+            &#sidebar-upper {
+                .sidebar-card {
+                    border-color: $color-secondary;
+
+                    a {
+                        background-color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    footer.site-footer {
+
+    }
+}

@@ -1,0 +1,12 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ block "title" . }}
+    {{/* Blocks may include default content. */}}
+    {{ .Site.Title }}
+  {{ end }}</title>
+
+  {{ $scss := resources.Get "scss/main.scss" }}
+  {{ $style := $scss | resources.ToCSS }}
+  {{ $style := $style | resources.PostCSS (dict "use" "autoprefixer") }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+</head>
