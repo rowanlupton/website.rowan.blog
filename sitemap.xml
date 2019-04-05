@@ -3,18 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://blog.rowan.website/posts/2018-01-19-braindump-on-contra-dancing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://blog.rowan.website/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-07-self-promotion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-14-why-do-we-need-the-shadow-dom-when-we-have-sass/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-11-controversial-opinions-part-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-08-yet-another-explanation-of-mastodon/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-08-youth-trad-song-weekend-2k18/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-08-yts-2k18-sound/</loc>
   </url>
   
 </urlset>
