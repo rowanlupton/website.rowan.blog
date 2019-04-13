@@ -1,0 +1,26 @@
+{
+  "baseURL": "https://blog.rowan.website",
+  "languageCode": "en-us",
+  "title": "The Salt Cellar",
+  "theme": "triangles",
+  "params": {},
+  "permalinks": {},
+  "menu": {
+    "navigation": [
+      {
+        "identifier": "About",
+        "name": "About",
+        "pre": "",
+        "url": "",
+        "weight": 100
+      },
+      {
+        "identifier": "Twitter",
+        "name": "Twitter feed",
+        "pre": "fab fa-twitter",
+        "url": "https://twitter.com/rowanlupton",
+        "weight": 200
+      }
+    ]
+  }
+}
