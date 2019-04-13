@@ -1,0 +1,28 @@
+<nav class="site-header-nav">
+  <ul>
+    {{ range .Site.Menus.navigation }}
+      <li><a href="{{ .URL }}" title="{{ .Name }}">{{ .Identifier }}</a></li>
+    {{ end }}
+  </ul>
+
+  {{/* <a href="#menu-open"
+      role="button"
+      id="menu-close"
+      aria-expanded="false"
+      aria-controls="menu"
+      aria-label="Close main navigation menu"></a> */}}
+</nav>
+
+{{/*<fieldset class="toggle hidden" id="fieldset-dark-mode">
+    <legend>dark mode toggler</legend>
+    <input type="checkbox" name="dark-mode" id="dark-toggle" aria-label="toggle dark mode"/>
+    <label for="dark-toggle"></label>
+</fieldset>*/}}
+
+{{/* <a href="#menus"
+    class="hamburger"
+    role="button"
+    id="menu-open"
+    aria-expanded="false"
+    aria-controls="menu"
+    aria-label="Open main navigation menu"></a> */}}
