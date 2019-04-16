@@ -1,7 +1,7 @@
 <nav class="site-header-nav">
   <ul>
     {{ range .Site.Menus.navigation }}
-      <li><a href="{{ .URL }}" title="{{ .Name }}">{{ .Identifier }}</a></li>
+      <li><a href="{{ .URL }}" title="{{ .Name }}" class="{{ .Pre }}">{{ .Identifier | safeHTML }}</a></li>
     {{ end }}
   </ul>
 
