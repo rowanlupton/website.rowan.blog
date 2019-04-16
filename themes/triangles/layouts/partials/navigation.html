@@ -1,9 +1,9 @@
 <nav class="site-header-nav">
-  <ul>
+  <ol>
     {{ range .Site.Menus.navigation }}
       <li><a href="{{ .URL }}" title="{{ .Name }}" class="{{ .Pre }}">{{ .Identifier | safeHTML }}</a></li>
     {{ end }}
-  </ul>
+  </ol>
 
   {{/* <a href="#menu-open"
       role="button"
