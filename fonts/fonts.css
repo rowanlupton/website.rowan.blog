@@ -1,0 +1,147 @@
+/* fonts:
+================================================================================= */
+ 
+/* Chunk Five regular */
+ 
+@font-face {
+    font-family: 'Chunk Five';
+    src: url('chunk/webfonts/ChunkFive-Regular.eot');
+    src: url('chunk/webfonts/ChunkFive-Regular.eot') format('embedded-opentype'),
+         url('chunk/webfonts/ChunkFive-Regular.woff2') format('woff2'),
+         url('chunk/webfonts/ChunkFive-Regular.woff') format('woff'),
+         url('chunk/ChunkFive-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+/* Chunk Five print */
+ 
+@font-face {
+    font-family: 'Chunk Five';
+    src: url('.chunk/ChunkFive-Print.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/* Goudy Bookletter regular */
+ 
+@font-face {
+    font-family: 'Goudy Bookletter 1911';
+    src: url('goudy-bookletter-1911/webfonts/goudy_bookletter_1911-webfont.eot');
+    src: url('goudy-bookletter-1911/webfonts/goudy_bookletter_1911-webfont.eot') format('embedded-opentype'),
+         url('goudy-bookletter-1911/webfonts/goudy_bookletter_1911-webfont.woff') format('woff'),
+         url('goudy-bookletter-1911/webfonts/goudy_bookletter_1911-webfont.ttf') format('truetype'),
+         url('goudy-bookletter-1911/webfonts/goudy_bookletter_1911-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* League Gothic regular */
+ 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('league-gothic/webfonts/leaguegothic-regular-webfont.eot');
+    src: url('league-gothic/webfonts/leaguegothic-regular-webfont.eot') format('embedded-opentype'),
+         url('league-gothic/webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('league-gothic/webfonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* League Gothic italic */
+ 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('league-gothic/webfonts/leaguegothic-italic-webfont.eot');
+    src: url('league-gothic/webfonts/leaguegothic-italic-webfont.eot') format('embedded-opentype'),
+         url('league-gothic/webfonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('league-gothic/webfonts/leaguegothic-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* League Gothic condensed regular */
+ 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('league-gothic/webfonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('league-gothic/webfonts/leaguegothic-condensed-regular-webfont.eot') format('embedded-opentype'),
+         url('league-gothic/webfonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('league-gothic/webfonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: condensed;
+}
+/* League Gothic condensed italic */
+ 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('league-gothic/webfonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('league-gothic/webfonts/leaguegothic-condensed-italic-webfont.eot') format('embedded-opentype'),
+         url('league-gothic/webfonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('league-gothic/webfonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: condensed italic;
+}
+
+
+/* Playfair Display SC regular */
+ 
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* Playfair Display SC Black */
+ 
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('Playfair_Display_SC/PlayfairDisplaySC-Black.ttf') format('truetype');
+    font-weight: bolder;
+}
+
+/* Playfair Display SC BlackItalic */
+ 
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('Playfair_Display_SC/PlayfairDisplaySC-BlackItalic.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* Playfair Display SC Bold */
+ 
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Playfair Display SC BoldItalic */
+ 
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('Playfair_Display_SC/PlayfairDisplaySC-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Playfair Display SC Italic */
+ 
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/* Stint Ultra Expanded */
+ 
+@font-face {
+    font-family: 'Stint Ultra Expanded';
+    src: url('Stint_Ultra_Expanded/StintUltraExpanded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
