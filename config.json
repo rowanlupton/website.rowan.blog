@@ -4,7 +4,9 @@
   "title": "The Salt Cellar",
   "theme": "triangles",
   "params": {},
-  "permalinks": {},
+  "permalinks": {
+    "twitter": "https://twitter.com/TheSaltCellar"
+  },
   "menu": {
     "navigation": [
       {
@@ -15,12 +17,18 @@
         "weight": 100
       },
       {
-        "identifier": "Twitter",
+        "identifier": "<i class='fab fa-twitter' title='Twitter'></i>",
         "name": "Twitter feed",
-        "pre": "fab fa-twitter",
-        "url": "https://twitter.com/rowanlupton",
+        "pre": "",
+        "url": "https://twitter.com/TheSaltCellar",
         "weight": 200
       }
+    ]
+  },
+  "notes": {
+    "navigation": [
+      "`pre` should be used to set classes on individual nav items (e.g. cta)",
+      "i intend to look and see if there's a better way to do this but i don't have internet rn"
     ]
   }
 }
