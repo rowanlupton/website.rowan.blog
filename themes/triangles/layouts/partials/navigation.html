@@ -1,16 +1,11 @@
 <nav class="site-header-nav">
-  <ol>
+  <input type="checkbox" name="menu-collapsed-checkbox" id="menu-toggle" aria-label="toggle whether nav menu is open on mobile" class="menu-toggle-mobile" />
+  <ol class="menu">
     {{ range .Site.Menus.navigation }}
       <li><a href="{{ .URL }}" title="{{ .Name }}" class="{{ .Pre }}">{{ .Identifier | safeHTML }}</a></li>
     {{ end }}
   </ol>
-
-  <a href="#menu-open"
-      role="button"
-      id="menu-close"
-      aria-expanded="false"
-      aria-controls="menu"
-      aria-label="Close main navigation menu"></a>
+  <label for="menu-toggle" class="menu-toggle-mobile"></label>
 </nav>
 
 {{/*<fieldset class="toggle hidden" id="fieldset-dark-mode">
@@ -18,11 +13,3 @@
     <input type="checkbox" name="dark-mode" id="dark-toggle" aria-label="toggle dark mode"/>
     <label for="dark-toggle"></label>
 </fieldset>*/}}
-
-<a href="#menus"
-    class="hamburger"
-    role="button"
-    id="menu-open"
-    aria-expanded="false"
-    aria-controls="menu"
-    aria-label="Open main navigation menu"></a>
