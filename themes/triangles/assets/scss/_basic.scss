@@ -3,20 +3,23 @@ html {
     transition:
         background-color $transition-length,
         color $transition-length,
-        border-color $transition-length;
+        border-color $transition-length,
+        height $transition-length,
+        width $transition-length,
+        transform $transition-length;
 }
 *, *:before, *:after {
     box-sizing: inherit;
     transition: inherit;
 }
 
-html, 
+html,
 body {
-    // overflow-x: hidden; 
+    // overflow-x: hidden;
 }
 
 * {
-    
+
 }
 
 html {
@@ -48,15 +51,6 @@ a {
 
     p {
         color: $color-dark;
-    }
-
-    // filter: brightness(1);
-    & {
-        transition: filter, $transition-length;
-    }
-
-    &:hover, &:focus {
-        filter: brightness(0.85);
     }
 }
 
@@ -104,7 +98,7 @@ body {
     background-color: #DFDFDF;
     color: #313131;
     font-size: 18px;
-    
+
     &.dark-mode {
         background-color: #313131;
         color: #DFDFDF;
@@ -128,18 +122,18 @@ fieldset.toggle {
         position: absolute;
         opacity: 0;
     }
-        
+
     input {
         opacity: 0;
     }
-    
-    input ~ label {   
+
+    input ~ label {
         display: inline-block;
         // line-height: 2;
         position: relative;
         z-index: 2;
         margin-left: ($toggle-width-ratio + 0.5) * $toggle-height;
-                
+
         &::before, &::after {
             content: "";
             height: $toggle-height;
@@ -149,7 +143,7 @@ fieldset.toggle {
             margin-left: -($toggle-width-ratio + 0.5) * $toggle-height;
             transition: filter $transition-length;
         }
-        
+
         &::before {
             width: $toggle-width-ratio * $toggle-height;
             border-radius: 0.5 * $toggle-height;
@@ -169,11 +163,11 @@ fieldset.toggle {
             line-height: $toggle-height;
             font-size: 1.5 * $toggle-height;
 
-            
+
             transition: margin-left $transition-length;
         }
     }
-    
+
     input:checked ~ label {
         &::after {
             $margin-left: (-($toggle-width-ratio + 0.5) * $toggle-height) + ($toggle-width-ratio * $toggle-height - $toggle-height);
@@ -199,7 +193,7 @@ fieldset.toggle {
     width: 3rem;
     height: 0.4rem;
     background: $color-secondary;
-    box-shadow: 
+    box-shadow:
     0 0.8rem 0 0 $color-secondary,
     0 1.6rem 0 0 $color-secondary;
 }
