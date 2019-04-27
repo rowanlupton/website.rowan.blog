@@ -6,7 +6,7 @@ categories:
 draft: false
 ---
 
-##or: since when do i cry at star wars movies
+or: since when do i cry at star wars movies
 
 (spoilers galore)
 
