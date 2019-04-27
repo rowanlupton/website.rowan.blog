@@ -23,6 +23,13 @@
         "pre": "",
         "url": "https://twitter.com/TheSaltCellar",
         "weight": 200
+      },
+      {
+        "identifier": "<i class='fab fa-github' title='Github'></i>",
+        "name": "Fork this theme on GitHub",
+        "pre": "",
+        "url": "https://github.com/rowanlupton/website.rowan.blog",
+        "weight": 300
       }
     ]
   },
