@@ -43,6 +43,9 @@ section#posts .post-card {
                 height: 70%;
                 position: absolute;
                 bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
                 * {
                     margin: 0;
