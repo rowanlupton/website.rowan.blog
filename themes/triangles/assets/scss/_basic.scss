@@ -15,7 +15,7 @@ html {
 
 html,
 body {
-    // overflow-x: hidden;
+
 }
 
 * {
@@ -30,6 +30,7 @@ html {
         font-size: $font-base-size * 0.85;
     }
     line-height: $line-height;
+    color: $color-dark;
 }
 
 h1 { font-size: 3rem; }
@@ -85,17 +86,6 @@ a {
 
 .hidden {
     display: none;
-}
-
-body {
-    background-color: #DFDFDF;
-    color: #313131;
-    font-size: 18px;
-
-    &.dark-mode {
-        background-color: #313131;
-        color: #DFDFDF;
-    }
 }
 
 .hidden {
