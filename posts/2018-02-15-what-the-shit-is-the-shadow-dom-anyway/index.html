@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <title>
+    
+    The Salt Cellar
+  </title>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/scss/main.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head><body><header class="site-header">
+  <a href="/" class="site-title">
+    The Salt Cellar
+  </a><nav class="site-header-nav">
+  <input type="checkbox" name="menu-collapsed-checkbox" id="menu-toggle" aria-label="toggle whether nav menu is open on mobile" class="menu-toggle-mobile" />
+  <ol class="menu">
+    
+      <li><a href="" title="About" class="">About</a></li>
+    
+      <li><a href="https://twitter.com/TheSaltCellar" title="Twitter feed" class=""><i class='fab fa-twitter' title='Twitter'></i></a></li>
+    
+      <li><a href="https://github.com/rowanlupton/website.rowan.blog" title="Fork this theme on GitHub" class=""><i class='fab fa-github' title='Github'></i></a></li>
+    
+  </ol>
+  <label for="menu-toggle" class="menu-toggle-mobile"></label>
+</nav>
+
+</header><main id="main" class="main outer">
+<main id="main" class="main outer">
+    <div class="inner"><section id="single-post">
+  <div class="splash-image">
+    <img src="https://placekitten.com/1500/1000" />
+  </div>
+  <div class="content">
+    <h1>What the shit is the Shadow DOM, anyway?</h1>
+    <p>
+
+<p>Shadow DOM: the next frontier in web development.</p>
+
+<p>Or something. Or not.</p>
+
+<p>Let&rsquo;s get y&rsquo;all up to speed. To start with:</p>
+
+<h1 id="what-the-shit-is-the-dom-anyway">What the shit is the DOM anyway?</h1>
+
+<p>It stands for Document Object Model. It&rsquo;s the result of all of the HTML and Javascript that renders a webpage, and it&rsquo;s what Javascript and CSS interact with.</p>
+
+<p>Yikes. Let&rsquo;s back up a bit.</p>
+
+<p>To start, we&rsquo;ll take a stupidly simple HTML file.</p>
+
+<pre><code class="language-language-markup">// index.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;A Simple Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;full&quot;&gt;
+            &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;p&gt;Goodbye world!&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>This file is rendered by your web browser to become the DOM. This is a tree of objects.</p>
+
+<pre><code>html
+ | -&gt; head
+    | -&gt; title
+       | -&gt; &quot;A Simple Webpage&quot;
+ | -&gt; body
+    | -&gt; div.full
+      | -&gt; p
+         | -&gt; &quot;Hello world!&quot;
+      | -&gt; p
+         | -&gt; &quot;Goodbye world!&quot;
+    | -&gt; div.empty
+</code></pre>
+
+<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.44.53-AM.png" alt="Screen-Shot-2018-02-15-at-8.44.53-AM" /></p>
+
+<p>&ldquo;But Rowan,&rdquo; you&rsquo;re saying, &ldquo;what&rsquo;s the difference between that tree and the HTML file?&rdquo;</p>
+
+<p>We&rsquo;re going to make a few changes.</p>
+
+<pre><code class="language-language-markup">// index.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;A Simple Webpage&lt;/title&gt;
+        &lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;full&quot;&gt;
+            &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;p&gt;Goodbye world!&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-language-js">// script.js
+
+document.querySelector('.full').innerHTML = '';
+document.querySelector('.empty').innerHTML = '&lt;p&gt;surprise!&lt;/p&gt;';
+</code></pre>
+
+<p>Now, the DOM looks like this:</p>
+
+<pre><code>html
+ | -&gt; head
+    | -&gt; title
+       | -&gt; &quot;A Simple Webpage&quot;
+ | -&gt; body
+    | -&gt; div.full
+    | -&gt; div.empty
+       | -&gt; p
+          | -&gt; &quot;surprise!&quot;
+</code></pre>
+
+<p>because the Javascript removed the content from our <code>.full</code> div and added text to our <code>.empty</code> one.</p>
+
+<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.45.57-AM.png" alt="A page that says just &quot;surprise!&quot;" />
+<small>Please ignore the <code>&lt;script&gt;</code> tag in there, I didn&rsquo;t want to fuss with separate files.</small></p>
+
+<p>The point of this was to illustrate: the DOM is the page <em>as it is rendered</em>, not as it is written in the HTML file.</p>
+
+<p>The DOM is the page as it exists in the browser.</p>
+
+<p><a href="https://css-tricks.com/dom/">You can read more about it here.</a></p>
+
+<h1 id="css">CSS</h1>
+
+<p>Cascading Style Sheets — the last of the holy trinity. If we had added a stylesheet to the simple webpage we made earlier, like so:</p>
+
+<pre><code class="language-language-css">.full {
+    background-color: red;
+}
+p {
+    color: blue;
+}
+</code></pre>
+
+<p>the background color of &ldquo;Hello world!&rdquo; and &ldquo;Goodbye world!&rdquo; would have been red, and all of the text on the page would have been blue (regardless of which text it was).</p>
+
+<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.56.27-AM.png" alt="Webpage saying &quot;surprise!&quot; in blue" /></p>
+
+<p>This is important. Because we styled <code>&lt;p&gt;</code> elements to be blue, <em>every</em> <code>&lt;p&gt;</code> element on the page is blue (unless styled otherwise).</p>
+
+<p>This can be useful! It allows for consistency among elements on the page — for example, if you style</p>
+
+<pre><code class="language-language-css">// style.css
+
+input[type='button'] {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    overflow: hidden;
+}
+</code></pre>
+
+<p>then every input with a button type on your website will have a red background, white text, and be a circle (or oval, more likely).</p>
+
+<p>Cool.</p>
+
+<p>But what if you want to have a section (or <em>module</em>) of your page that has a <em>different type</em> of button?</p>
+
+<p>One way to achieve this is by making files like these:</p>
+
+<pre><code class="language-language-markup">// index.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;This page is styled!&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; src=&quot;style.css&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;input type=&quot;button&quot; /&gt;
+        &lt;div id=&quot;module&quot;&gt;
+            &lt;input type=&quot;button&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-language-css">// style.css
+
+input[type='button'] {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    overflow: hidden;
+}
+#module&gt;input[type='button'] {
+    background-color: white;
+    color: red;
+    border-radius: 0;
+    overflow: scroll;
+}
+</code></pre>
+
+<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.48.36-AM.png" alt="Two buttons on a page; one is a red circle." />
+<small>Look at those cute li&rsquo;l buttons. Cute as two buttons.</small></p>
+
+<p>This feels a little clunky, but at least it works. There are some ways you can make this better (e.g. SASS), and you could definitely be smarter (for example, if you gave <em>every</em> button a class, you could have completely independent styles — at the cost, of course, that you would be deciding styling in the markup.)</p>
+
+<p>We don&rsquo;t like style and markup mixing. Separation of concerns, and all that!</p>
+
+<h1 id="enter-shadow-dom">Enter Shadow DOM</h1>
+
+<p>Imagine if you could, instead, prevent document styles from entering a part of your document. If the <code>input[type='button']</code> styling didn&rsquo;t creep into the <code>#module</code> div.</p>
+
+<p>Well, now you can manage that!<sup class="footnote-ref" id="fnref:Well-you-might-h"><a href="#fn:Well-you-might-h">1</a></sup></p>
+
+<p>Shadow DOM lets you create a new DOM, which exists inside the existing DOM. It&rsquo;s sort of like a snowglobe, or a closed terrarium. I don&rsquo;t like snowglobes, so we&rsquo;ll stick with the closed terrarium example.</p>
+
+<p><img src="https://images.unsplash.com/photo-1496678518751-46244eef08c4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=99e60e510a12cf3af8cc9b2cdf941871" alt="A spherical terrarium housing small succulents on a white computer desk" />
+<small>Sort of like this, but without a big honkin&rsquo; hole. | Photo by <a href="https://unsplash.com/@nielsenramon?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Nielsen Ramon</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></small></p>
+
+<p>A closed terrarium is (almost) entirely self-sufficient. There&rsquo;s some stuff inside it, and that all makes up an ecosystem. If you put your terrarium in a rainforest, the terrarium wouldn&rsquo;t change from if it was in a desert, or the arctic. The analogy falls down a little bit because temperatures fluctuate.</p>
+
+<p>The point remains, though: wherever you put your little Shadow DOM, it exists independently, by its own rules.</p>
+
+<p>Instead of ecosystem, that means its lexical scope, styles, everything.</p>
+
+<p>When you attach a Shadow DOM to an element, you&rsquo;re creating a little terrarium in your webpage.</p>
+
+<pre><code class="language-language-markup">// index.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;This page has texture, and overhead lighting&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; src=&quot;style.css&quot; /&gt;
+        &lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;input type=&quot;button&quot; /&gt;
+        &lt;div id=&quot;terrarium&quot;&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-language-css">// style.css
+
+input[type='button'] {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    overflow: hidden;
+}
+</code></pre>
+
+<pre><code class="language-language-javascript">// script.js
+
+terrarium = document.querySelector('#terrarium');
+
+// set up the button to insert
+let button = document.createElement(&quot;input&quot;);
+button.type = 'button';
+
+// attach a Shadow DOM. Ignore the mode for now.
+terrarium.attachShadow({mode: 'open'})
+         .appendChild(button);
+</code></pre>
+
+<p>Now we have two DOMs, each with their own button. If you create this on your own computer, you&rsquo;ll see something like this:
+<img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.31.21-AM.png" alt="Two buttons on a page; one is a red circle." />
+<small>&ldquo;Haven&rsquo;t we seen this before?&rdquo; Check out the inspector!</small></p>
+
+<p>Starting from the top: you&rsquo;ve got a round red button, and an unstyled basic button coming after it, without doing any fuckery in the markup and styling. That&rsquo;s pretty cool on its own.</p>
+
+<p>Then we&rsquo;ll look at the Inspect view. You can see <code>#shadow-root (open)</code> inside of our <code>#terrarium</code> div.</p>
+
+<p>There&rsquo;s the root of our Shadow DOM. Everything inside it (in this case, just the <code>&lt;input type='button'&gt;</code> element) exists outside the normal DOM.<sup class="footnote-ref" id="fnref:Well-sort-of-You"><a href="#fn:Well-sort-of-You">2</a></sup></p>
+
+<h1 id="beyond-shadow-dom">Beyond Shadow DOM</h1>
+
+<p><img src="/content/images/2018/02/thunderdome_flickr.jpg" alt="The Thunderdome, from Mad Max" />
+There&rsquo;s so much more! But not here, not today. If you want to get into the gory details, you&rsquo;ll want to look at things like <a href="https://www.html5rocks.com/en/tutorials/webcomponents/imports/">HTML imports</a><sup class="footnote-ref" id="fnref:Well-this-is-ext"><a href="#fn:Well-this-is-ext">3</a></sup> and the <a href="https://developers.google.com/web/fundamentals/web-components/shadowdom#styling"><code>:host</code> CSS selector</a> and really, just read <a href="https://developers.google.com/web/fundamentals/web-components/shadowdom">that whole page</a>.</p>
+
+<p>It&rsquo;s cool stuff! <a href="https://blog.rowan.website/2018/02/14/why-do-we-need-the-shadow-dom-when-we-have-sass/">I&rsquo;m still not convinced that it&rsquo;s broadly useful, but am coming around after writing this post.</a> I just had to get over associating Shadow DOM with CSS in JS.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Well-you-might-h">Well, you might have to use a polyfill (a bit of Javascript that replicates functionality that hasn&rsquo;t been implemented in the user&rsquo;s browser). <a class="footnote-return" href="#fnref:Well-you-might-h"><sup>[return]</sup></a></li>
+<li id="fn:Well-sort-of-You">Well, sort of. You can apply styles to the Shadow DOM using outside CSS files, but it&rsquo;s much more idiomatic, and useful, to do it from inside, so that you can create a fully self-contained module. <a class="footnote-return" href="#fnref:Well-sort-of-You"><sup>[return]</sup></a></li>
+<li id="fn:Well-this-is-ext">Well, this is extrmely poorly supported across browsers at this point. You&rsquo;ll want to <a href="https://www.webcomponents.org/polyfills/">use a polyfill</a>. <a class="footnote-return" href="#fnref:Well-this-is-ext"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</p>
+  </div>
+</section></div>
+</main>
+
+
+
+        </main><section id="sidebar">
+  <a class="twitter-timeline" href="https://twitter.com/TheSaltCellar?ref_src=twsrc%5Etfw">Tweets by TheSaltCellar</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section></body>
+</html>

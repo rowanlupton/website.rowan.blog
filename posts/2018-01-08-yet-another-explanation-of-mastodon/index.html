@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <title>
+    
+    The Salt Cellar
+  </title>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/scss/main.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head><body><header class="site-header">
+  <a href="/" class="site-title">
+    The Salt Cellar
+  </a><nav class="site-header-nav">
+  <input type="checkbox" name="menu-collapsed-checkbox" id="menu-toggle" aria-label="toggle whether nav menu is open on mobile" class="menu-toggle-mobile" />
+  <ol class="menu">
+    
+      <li><a href="" title="About" class="">About</a></li>
+    
+      <li><a href="https://twitter.com/TheSaltCellar" title="Twitter feed" class=""><i class='fab fa-twitter' title='Twitter'></i></a></li>
+    
+      <li><a href="https://github.com/rowanlupton/website.rowan.blog" title="Fork this theme on GitHub" class=""><i class='fab fa-github' title='Github'></i></a></li>
+    
+  </ol>
+  <label for="menu-toggle" class="menu-toggle-mobile"></label>
+</nav>
+
+</header><main id="main" class="main outer">
+<main id="main" class="main outer">
+    <div class="inner"><section id="single-post">
+  <div class="splash-image">
+    <img src="https://placekitten.com/1500/1000" />
+  </div>
+  <div class="content">
+    <h1>yet another explanation of Mastodon</h1>
+    <p>
+
+<p>The situation: you&rsquo;ve seen people talking about Mastodon. Maybe you&rsquo;re intrigued, maybe you&rsquo;re not. Either way, when they&rsquo;ve tried to explain it to you, you&rsquo;ve been confused, turned off, or maybe even a little angry that they won&rsquo;t shut up about it.</p>
+
+<p>I&rsquo;m going to try and undo some of that damage. This post is intended to start out with a non-technical general explanation and go from there to explain Mastodon in more and more detail. Don&rsquo;t feel obligated to read farther than you&rsquo;re interested to learn.
+That being said, I&rsquo;ve tried to keep from getting too far into the technical side (that&rsquo;ll come in a different post), so I think that it should be readable to anybody who&rsquo;s interested.</p>
+
+<h2 id="basics-of-mastodon">basics of Mastodon</h2>
+
+<p>Mastodon is a microblogging<sup class="footnote-ref" id="fnref:blogging-with-a"><a href="#fn:blogging-with-a">1</a></sup> service, similar in some ways to Twitter, but with some key differences:
+1. it has a 500-character limit
+2. it&rsquo;s not controlled by a for-profit company
+3. anybody can run their own version of it, <strong>and still talk to everyone else</strong></p>
+
+<p>Point 3 gets at the bit that people tend to find confusing. Some simple comparisons that we can draw are email and telephones: your email might be from Apple, your employer, Protonmail or somebody else, and your telephone might be managed by O2, T-Mobile, or somebody else.
+Behind the scenes, those services all <em>federate with</em><sup class="footnote-ref" id="fnref:talk-to"><a href="#fn:talk-to">2</a></sup> each other. Email does by looking up the <em>email domain</em><sup class="footnote-ref" id="fnref:e-g-protonmail-c"><a href="#fn:e-g-protonmail-c">3</a></sup> and then having that email service <em>route</em><sup class="footnote-ref" id="fnref:send-to-the-righ"><a href="#fn:send-to-the-righ">4</a></sup> from there to the addressee<sup class="footnote-ref" id="fnref:the-bit-before-t"><a href="#fn:the-bit-before-t">5</a></sup>. I don&rsquo;t know how telephones do it.</p>
+
+<p>Mastodon also <em>federates</em>. Imagine if I could run a Twitter account on my own <em>domain</em><sup class="footnote-ref" id="fnref:internet-address"><a href="#fn:internet-address">6</a></sup>, example.com — I would then be known as @rowan@example.com, and you could follow me from your account on twitter.com.</p>
+
+<p>So now, we&rsquo;re starting to envision a democratic system. Everybody has a choice about where to put their social presence, and can still follow their friends no matter where they are — same as you can visit any website from any internet service provider, web browser, location.<sup class="footnote-ref" id="fnref:unless-your-gove"><a href="#fn:unless-your-gove">7</a></sup></p>
+
+<p>Mastodon takes this utopian internet vision and puts it into practice. From my account on <a href="https://toot.cafe">toot.cafe</a> I can follow my friend @ebeth on <a href="https://witches.town">witches.town</a>, or @shel on <a href="https://cybre.space">cybre.space</a>, or anybody else using Mastodon.</p>
+
+<h2 id="communities">communities</h2>
+
+<p>This leads into the next thing that makes Mastodon special: because anybody can create an <em>instance</em><sup class="footnote-ref" id="fnref:a-website-that-i"><a href="#fn:a-website-that-i">8</a></sup>, and any user on that <em>instance</em> can follow anyone using Mastodon, you can have interest-specific Mastodon websites. To give a taste:
+* <a href="https://toot.cafe">toot.cafe</a>: directed at web developers
+* <a href="https://mastodon.art">mastodon.art</a>: as the name implies, a hub for artists. a few months ago there was a mass influx of comics people; a lot of them ended up here
+* <a href="https://social.coop">social.coop</a>: run as a <a href="https://platform.coop/about">platform cooperative</a>. This is a great place for people who like to geek out about coops
+* and thousands more! <a href="https://instances.social">instances.social</a> and <a href="https://joinmastodon.org">joinmastodon.org</a> exist to help you find what you&rsquo;re looking for.</p>
+
+<p>Details of communities on Mastodon — and what they mean to me — are outside the scope of this post. If you&rsquo;re interested in learning about instances, why they build communities, and the ones that I&rsquo;m on, check out my blog post <a href="https://blog.rowan.website/2017/12/23/why-i-join-mastodon/">why I join Mastodon</a>.</p>
+
+<h2 id="step-back-it-s-the-fediverse">step back: it&rsquo;s the fediverse</h2>
+
+<p>Except, wait! Mastodon doesn&rsquo;t only talk to Mastodon. The <em>federated social web</em><sup class="footnote-ref" id="fnref:Mastodon-is-a-pa"><a href="#fn:Mastodon-is-a-pa">9</a></sup> has existed for years, with geeky things like <a href="https://diasporafoundation.org/">diaspora*</a> and <a href="https://identi.ca/">identi.ca</a> — not standard household names, by any means.
+Mastodon is special in that it helped bring the <em>fediverse</em><sup class="footnote-ref" id="fnref:federated-social"><a href="#fn:federated-social">10</a></sup> out of the shadows, and fostered a community that is excited about openness<sup class="footnote-ref" id="fnref:see-recent-hasht"><a href="#fn:see-recent-hasht">11</a></sup> and sharing the <em>fediverse</em> with everyone, not just an artificially elevated &ldquo;tech elite&rdquo;.</p>
+
+<p>Since Mastodon started, there has been an explosion of excitement about the <em>fediverse</em>. <a href="https://puckipedia.com/">@puckipedia</a> is writing <a href="https://github.com/puckipedia/Kroeg">Kroeg</a>, a group of people headed by <a href="https://dev.glitch.social/@banjofox">@BanjoFox</a> are working on <a href="https://aardwolf.social/">Aardwolf</a> (modeled off of a federated facebook), and even I am working on <a href="https://github.com/rowanlupton/pylodon">pylodon</a> and its companion <a href="https://github.com/rowanlupton/smilodon">smilodon</a>, and there are many more <em>federated</em> projects.
+Each of these will be able to <em>federate</em> with each other, contributing to a vision of a future where you can not only follow somebody on (heavy implicit metaphors ahead) Twitter from Twitter, but also from Facebook.</p>
+
+<p>The <em>fediverse</em> imagines a future where there are no walls between social networks, blogs, and whatever springs up — you choose the one(s) that work(s) best for you, and just follow your friends. No thought required.</p>
+
+<p><a href="https://medium.com/@rowanlupton/yet-another-explanation-of-mastodon-8e40f9748788">This post is also published on Medium; if you enjoyed it, please consider clapping.</a></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:blogging-with-a">blogging with a limited character number, to keep it short <a class="footnote-return" href="#fnref:blogging-with-a"><sup>[return]</sup></a></li>
+<li id="fn:talk-to">talk to <a class="footnote-return" href="#fnref:talk-to"><sup>[return]</sup></a></li>
+<li id="fn:e-g-protonmail-c">e.g. protonmail.com, the bit after the @ symbol <a class="footnote-return" href="#fnref:e-g-protonmail-c"><sup>[return]</sup></a></li>
+<li id="fn:send-to-the-righ">send to the right place <a class="footnote-return" href="#fnref:send-to-the-righ"><sup>[return]</sup></a></li>
+<li id="fn:the-bit-before-t">the bit before the @ symbol <a class="footnote-return" href="#fnref:the-bit-before-t"><sup>[return]</sup></a></li>
+<li id="fn:internet-address">internet address, or url <a class="footnote-return" href="#fnref:internet-address"><sup>[return]</sup></a></li>
+<li id="fn:unless-your-gove">unless your government blocks them <a class="footnote-return" href="#fnref:unless-your-gove"><sup>[return]</sup></a></li>
+<li id="fn:a-website-that-i">a website that is Mastodon <a class="footnote-return" href="#fnref:a-website-that-i"><sup>[return]</sup></a></li>
+<li id="fn:Mastodon-is-a-pa">Mastodon is a part of this federation, as is any social website that <em>federates</em> with other social websites <a class="footnote-return" href="#fnref:Mastodon-is-a-pa"><sup>[return]</sup></a></li>
+<li id="fn:federated-social">federated social web <a class="footnote-return" href="#fnref:federated-social"><sup>[return]</sup></a></li>
+<li id="fn:see-recent-hasht">see recent hashtag #GetOnMyLawn <a class="footnote-return" href="#fnref:see-recent-hasht"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</p>
+  </div>
+</section></div>
+</main>
+
+
+
+        </main><section id="sidebar">
+  <a class="twitter-timeline" href="https://twitter.com/TheSaltCellar?ref_src=twsrc%5Etfw">Tweets by TheSaltCellar</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section></body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <title>
+    
+    The Salt Cellar
+  </title>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/scss/main.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head><body><header class="site-header">
+  <a href="/" class="site-title">
+    The Salt Cellar
+  </a><nav class="site-header-nav">
+  <input type="checkbox" name="menu-collapsed-checkbox" id="menu-toggle" aria-label="toggle whether nav menu is open on mobile" class="menu-toggle-mobile" />
+  <ol class="menu">
+    
+      <li><a href="" title="About" class="">About</a></li>
+    
+      <li><a href="https://twitter.com/TheSaltCellar" title="Twitter feed" class=""><i class='fab fa-twitter' title='Twitter'></i></a></li>
+    
+      <li><a href="https://github.com/rowanlupton/website.rowan.blog" title="Fork this theme on GitHub" class=""><i class='fab fa-github' title='Github'></i></a></li>
+    
+  </ol>
+  <label for="menu-toggle" class="menu-toggle-mobile"></label>
+</nav>
+
+</header><main id="main" class="main outer">
+<main id="main" class="main outer">
+    <div class="inner"><section id="single-post">
+  <div class="splash-image">
+    <img src="https://placekitten.com/1500/1000" />
+  </div>
+  <div class="content">
+    <h1>Why do we need the Shadow DOM when we have SASS?</h1>
+    <p>
+
+<p>n.b. if you&rsquo;re not a web developer and aren&rsquo;t interested in being one, this post may not be for you. lmk if you want a follow-up that&rsquo;ll try to explain things accessibly!</p>
+
+<h1 id="ghost-dominatrixes-isn-t-this-a-little-personal">Ghost dominatrixes? Isn&rsquo;t this a little personal?</h1>
+
+<p>The Shadow DOM is a concept in web development. It basically lets you make little capsules inside a web page, that have their own separate <a href="https://css-tricks.com/dom/">DOM</a> (Document Object Model).</p>
+
+<h3 id="if-that-flew-over-your-head">If that flew over your head:</h3>
+
+<p>The DOM is, basically, everything in a webpage. Shadow DOM is kind of like having a separate webpage inside your webpage (yo dawg), which has all of its own elements, styles, etc. I don&rsquo;t think I can really do an explanation justice in this post, but if there&rsquo;s interest, I can try to write a shadow DOM for non-developers post in a bit.</p>
+
+<h1 id="honey-you-gotta-cut-back-on-the-sass">Honey, you gotta cut back on the SASS.</h1>
+
+<p><a href="https://css-tricks.com/sass-style-guide/">SASS</a> (Syntactically Awesome Style Sheets) is a tool for writing more semantic <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> (Cascading Style Sheets). If you&rsquo;ve ever made a simple webpage, you&rsquo;ve probably worked with CSS. And, unlike anything in CSS itself, it&rsquo;s outside the <em>scope</em> of this piece.</p>
+
+<h1 id="so-what-do-they-have-to-do-with-each-other">So what do they have to do with each other?</h1>
+
+<p>Honestly: I&rsquo;m still trying to figure that out.</p>
+
+<p>One of the biggest arguments for the Shadow DOM, CSS-in-JS, and a bunch of other things is that it solves the global scoping problem. That is, if you style your element <code>&lt;div id=&quot;thing&quot;&gt;</code><sup class="footnote-ref" id="fnref:this-is-of-cours"><a href="#fn:this-is-of-cours">1</a></sup></p>
+
+<pre><code class="language-language-css">#thing {
+    color: red;
+    display: none;
+}
+</code></pre>
+
+<p>for some reason, and then later somebody comes along and writes a new bit of the page (or if you forget) and it&rsquo;s about a different thing, but they make <code>&lt;p id=&quot;thing&quot;&gt;</code>, suddenly it&rsquo;s not gonna display, and everyone&rsquo;s going to be sad.</p>
+
+<p>The first lesson here, unrelated to DOM black magic, is that you should ALWAYS NAME YOUR IDS DESCRIPTIVELY.</p>
+
+<h2 id="sass">SASS</h2>
+
+<p>The second can take two forms. One, that I&rsquo;ve used up until now, is that you should always be as descriptive as you can about <em>which</em> element you&rsquo;re styling — instead of <code>#thing {}</code>, try <code>header&gt;#thing-wrapper&gt;#thing {}</code> to be sure that you&rsquo;re keeping the style in the scope of #thing-wrapper in the scope of header.
+It&rsquo;s a little clumsy to write all of that out each time, so sass lets you do e.g.</p>
+
+<pre><code class="language-language-css">// style.scss
+// apologies for the syntax highlighting being wonky
+
+header {
+    /* some styles for the header */
+
+    #thing-wrapper {
+        /* some styles for #thing-wrapper inside the &lt;header&gt; block */
+
+        #thing {
+            /* this will apply only to this particular #thing */
+            color: red;
+            display: none;
+        }
+    }
+}
+</code></pre>
+
+<p>Ahh. That&rsquo;s much nicer. Combined with SASS&rsquo;s import statements, you can easily write modules for CSS, and wrap each of them so that they only affect the selector you mean to write them for. Or you can write some global styles, like what color links should be, and overwrite them later if necessary! Cascading. Sheets. Nice.</p>
+
+<h2 id="shadow-dom">Shadow DOM</h2>
+
+<p>Or, you might say, &ldquo;I&rsquo;m writing a module and I don&rsquo;t want it to inherit ANY STYLES from the rest of the page!&rdquo;. I guess I just answered my question there, in a way — if you&rsquo;re e.g. writing a brand plugin (like a Twitter embed box), you probably want to be sure that any style that the user wrote won&rsquo;t affect your branding.
+This is currently done by an <code>&lt;iframe&gt;</code>, which is clunky and old and Bad™. Shadow DOM is a more elegant solution.</p>
+
+<p>So that&rsquo;s the &ldquo;I&rsquo;m a big brand and I want to be sure that everybody who uses any of my content is stuck with how I want it to look&rdquo; scenario. Why would you want to use Shadow DOM for a component of your own?</p>
+
+<p>This is where I&rsquo;m stuck. I don&rsquo;t see why I would want to cut off a module of my page from the overall styling of the rest of it, just so that I can do what I could with a</p>
+
+<pre><code class="language-language-css">// '_module.scss'
+
+module {
+    /* all of my styles for this module */
+}
+</code></pre>
+
+<p>SASS module.</p>
+
+<p>Basically my same questions apply to CSS-in-JS, fwiw.</p>
+
+<h1 id="wrap-up">Wrap-up</h1>
+
+<p>So. Where I am:</p>
+
+<p><img src="/content/images/2018/02/Screen-Shot-2018-02-14-at-11.54.56-AM.png" alt="Screen-Shot-2018-02-14-at-11.54.56-AM" />
+* Shadow DOM is HELLA COOL. Like, I&rsquo;ve been staring at the document where I tried it out for 5 minutes and I&rsquo;m still overwhelmed by how heckin&rsquo; cool it is!
+* I hate the idea of serving essential content on my site that won&rsquo;t render at all if JavaScript is disabled. Especially in the wake of Meltdown/Spectre, there is almost certainly a jump in people who disable JS by default when browsing.
+* I still don&rsquo;t understand why, if I&rsquo;m not a Big Evil Brand, I would want to use Shadow DOM, apart from:
+    * it&rsquo;s cutting edge
+    * it&rsquo;s conceptually incredible</p>
+
+<p>Please help. I want to understand.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:this-is-of-cours">this is, of course, a bad idea to begin with! descriptive names, y&rsquo;all <a class="footnote-return" href="#fnref:this-is-of-cours"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</p>
+  </div>
+</section></div>
+</main>
+
+
+
+        </main><section id="sidebar">
+  <a class="twitter-timeline" href="https://twitter.com/TheSaltCellar?ref_src=twsrc%5Etfw">Tweets by TheSaltCellar</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section></body>
+</html>
