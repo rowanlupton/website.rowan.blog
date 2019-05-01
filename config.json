@@ -30,6 +30,13 @@
         "pre": "",
         "url": "https://github.com/rowanlupton/website.rowan.blog",
         "weight": 300
+      },
+      {
+        "identifier": "<i class='fas fa-rss' title='RSS'></i>",
+        "name": "Subscribe in your RSS reader",
+        "pre": "",
+        "url": "/index.xml",
+        "weight": 400
       }
     ]
   },
