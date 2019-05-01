@@ -1,4 +1,5 @@
-<div class="post-card" style="background-image: url(http://placekitten.com/1000/{{ add 500 .index }})">
+{{ $placekitten := path.Join "https://placekitten.com/1000/" (add 500 .index) }}
+<div class="post-card" style="background-image: url({{ .context.Params.image | default $placekitten }})">
     <a href="{{ .context.RelPermalink }}" class="inner">
         <div class="content">
             <h2>{{ .context.Title | safeHTML }}</h2>
