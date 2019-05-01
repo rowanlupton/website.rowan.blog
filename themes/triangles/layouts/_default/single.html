@@ -1,0 +1,45 @@
+{{ define "main" }}
+<main id="main" class="main outer">
+    <div class="inner">
+        <section id="single-page">
+            <div class="post-single">
+              <img src="https://placekitten.com/1500/500" />
+              <div class="content">
+                <h1>{{ .Title }}</h1>
+                <p>{{ .Content }}</p>
+              </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+{{/* <aside id="meta">
+    <div>
+    <section>
+      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+    </section>
+    {{ with .Params.topics }}
+    <ul id="topics">
+      {{ range . }}
+        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ with .Params.tags }}
+    <ul id="tags">
+      {{ range . }}
+        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    </div>
+    <div>
+        {{ with .PrevInSection }}
+          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
+</aside> */}}
+{{ end }}
