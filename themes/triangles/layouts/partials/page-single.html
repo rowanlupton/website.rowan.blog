@@ -1,6 +1,7 @@
 <section id="single-post">
   <div class="splash-image">
-    <img src="{{ .Params.image | default `https://placekitten.com/1500/1000` }}" />
+    {{ $placekitten := print "https://placekitten.com/1500/1000" }}
+    <img src="{{ .Params.image | default $placekitten }}" />
   </div>
   <div class="content">
     <h1>{{ .Title }}</h1>
