@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "yet another explanation of Mastodon"
-date: 2018-01-08 21:00:25 000Z
+date: 2018-01-08
 categories:
 draft: false
 ---

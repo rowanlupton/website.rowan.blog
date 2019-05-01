@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "one-dish brownies"
-date: 2018-01-12 01:30:24 000Z
+date: 2018-01-12
 categories:
 draft: true
 ---

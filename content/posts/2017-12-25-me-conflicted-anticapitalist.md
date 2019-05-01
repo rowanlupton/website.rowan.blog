@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "me: (conflicted) anticapitalist"
-date: 2017-12-25 15:41:32 000Z
+date: 2017-12-25
 categories:
 draft: true
 ---

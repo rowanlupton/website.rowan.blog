@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "should i go to dandelion romp"
-date: 2018-01-25 15:32:33 000Z
+date: 2018-01-25
 categories:
 draft: true
 ---

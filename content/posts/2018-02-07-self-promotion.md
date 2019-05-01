@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Self-promotion"
-date: 2018-02-07 14:05:01 000Z
+date: 2018-02-07
 categories:
 draft: false
 ---

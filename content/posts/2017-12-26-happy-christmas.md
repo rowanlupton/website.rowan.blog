@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "happy christmas!"
-date: 2017-12-26 05:46:10 000Z
+date: 2017-12-26
 categories:
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "controversial opinions, part 1"
-date: 2018-01-11 16:46:39 000Z
+date: 2018-01-11
 categories:
 draft: false
 ---

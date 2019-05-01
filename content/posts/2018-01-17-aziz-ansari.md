@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aziz Ansari"
-date: 2018-01-17 16:29:44 000Z
+date: 2018-01-17
 categories:
 draft: true
 ---

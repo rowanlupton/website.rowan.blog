@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "why pylodon exists"
-date: 2017-12-24 01:59:47 000Z
+date: 2017-12-24
 categories:
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What the shit is the Shadow DOM, anyway?"
-date: 2018-02-15 13:51:02 000Z
+date: 2018-02-15
 categories:
 draft: false
 ---

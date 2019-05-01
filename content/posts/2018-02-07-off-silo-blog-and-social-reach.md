@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Off-silo blog and social reach"
-date: 2018-02-07 14:18:51 000Z
+date: 2018-02-07
 categories:
 draft: false
 ---

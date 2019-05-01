@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "why I join Mastodon"
-date: 2017-12-23 20:00:00 000Z
+date: 2017-12-23
 categories:
 draft: false
 ---

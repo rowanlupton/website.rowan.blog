@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Braindump on Contra Dancing"
-date: 2018-01-19 16:09:32 000Z
+date: 2018-01-19
 categories:
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "mastodon and coops"
-date: 2017-12-24 17:25:58 000Z
+date: 2017-12-24
 categories:
 draft: false
 ---

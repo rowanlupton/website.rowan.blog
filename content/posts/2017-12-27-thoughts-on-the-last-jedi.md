@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "thoughts on the last jedi"
-date: 2017-12-27 06:03:07 000Z
+date: 2017-12-27
 categories:
 draft: false
 ---

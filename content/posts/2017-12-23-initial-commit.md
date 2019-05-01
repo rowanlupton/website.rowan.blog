@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "initial commit"
-date: 2017-12-23 19:04:39 000Z
+date: 2017-12-23
 categories:
 draft: true
 ---

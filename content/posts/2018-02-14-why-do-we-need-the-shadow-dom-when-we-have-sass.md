@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why do we need the Shadow DOM when we have SASS?"
-date: 2018-02-14 17:31:16 000Z
+date: 2018-02-14
 categories:
 draft: false
 ---
