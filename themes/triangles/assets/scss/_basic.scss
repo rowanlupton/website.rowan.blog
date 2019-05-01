@@ -27,7 +27,7 @@ html {
     font-weight: $font-weight-medium;
     font-size: $font-base-size;
     @media screen and (max-width: $break-lg) {
-        font-size: $font-base-size * 0.85;
+        font-size: $font-base-size * 0.8;
     }
     line-height: $line-height;
     color: $color-dark;
