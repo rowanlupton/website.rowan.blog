@@ -8,6 +8,7 @@ header.site-header {
   font-style: $font-style-normal;
   font-size: 1.2rem;
   background-color: $color-light;
+  box-shadow: -10px 0px 10px 0px $color-primary;
 
   &:before {
     content: '';
