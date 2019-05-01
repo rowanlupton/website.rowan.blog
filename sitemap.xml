@@ -3,7 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.rowan.website/posts/2019-05-01-im-back/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/</loc>
+    <lastmod>2018-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-14-why-do-we-need-the-shadow-dom-when-we-have-sass/</loc>
+    <lastmod>2018-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-02-07-self-promotion/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.rowan.website/posts/2018-01-19-braindump-on-contra-dancing/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</loc>
+    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-11-controversial-opinions-part-1/</loc>
+    <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-08-yet-another-explanation-of-mastodon/</loc>
+    <lastmod>2018-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-08-youth-trad-song-weekend-2k18/</loc>
+    <lastmod>2018-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2018-01-08-yts-2k18-sound/</loc>
+    <lastmod>2018-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</loc>
+    <lastmod>2017-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</loc>
+    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</loc>
+    <lastmod>2017-12-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</loc>
+    <lastmod>2017-12-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -12,20 +88,9 @@
   </url>
   
   <url>
-    <loc>https://blog.rowan.website/posts/2019-05-01-im-back/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</loc>
-  </url>
-  
-  <url>
     <loc>https://blog.rowan.website/posts/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-02-07-self-promotion/</loc>
   </url>
   
   <url>
@@ -34,56 +99,9 @@
   </url>
   
   <url>
-    <loc>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</loc>
-  </url>
-  
-  <url>
     <loc>https://blog.rowan.website/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-02-14-why-do-we-need-the-shadow-dom-when-we-have-sass/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-01-11-controversial-opinions-part-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-01-08-yet-another-explanation-of-mastodon/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-01-08-youth-trad-song-weekend-2k18/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.rowan.website/posts/2018-01-08-yts-2k18-sound/</loc>
   </url>
   
 </urlset>

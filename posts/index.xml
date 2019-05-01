@@ -6,23 +6,15 @@
     <description>Recent content in Posts on The Salt Cellar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.rowan.website/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Braindump on Contra Dancing</title>
-      <link>https://blog.rowan.website/posts/2018-01-19-braindump-on-contra-dancing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2018-01-19-braindump-on-contra-dancing/</guid>
-      <description>I&amp;rsquo;ve been in the contra scene since I was born; my parents met at a contra dance, and their main social community is based off of it, so it was kind of unavoidable.</description>
-    </item>
-    
-    <item>
       <title>I&#39;M BACK</title>
       <link>https://blog.rowan.website/posts/2019-05-01-im-back/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2019-05-01-im-back/</guid>
       <description>GOT THE BLOG BACK
@@ -30,38 +22,9 @@ most of the posts just have a default image from placekitten (it&amp;rsquo;s all
     </item>
     
     <item>
-      <title>Off-silo blog and social reach</title>
-      <link>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</guid>
-      <description>As expected, when I started writing on a standalone blog instead of long facebook posts, interaction with things I said dropped.
-This is frustrating.
-I think that I&amp;rsquo;m saying better things than I was in long unedited Facebook posts.</description>
-    </item>
-    
-    <item>
-      <title>Self-promotion</title>
-      <link>https://blog.rowan.website/posts/2018-02-07-self-promotion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2018-02-07-self-promotion/</guid>
-      <description>I hate self-promotion. It feels gross, and it feels like I should be letting people come to me, and it feels like a huge imposition on all of my friends.</description>
-    </item>
-    
-    <item>
-      <title>The Morris Ring is Still an Anti-Feminist Institution</title>
-      <link>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</guid>
-      <description>The Morris Ring. An organization that&amp;rsquo;s been irrelevant to any non-morris dancer, largely irrelevant to any side in the United States, and irrelevant to many dancers in the U.</description>
-    </item>
-    
-    <item>
       <title>What the shit is the Shadow DOM, anyway?</title>
       <link>https://blog.rowan.website/posts/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/</guid>
       <description>Shadow DOM: the next frontier in web development.
@@ -73,16 +36,54 @@ What the shit is the DOM anyway?</description>
     <item>
       <title>Why do we need the Shadow DOM when we have SASS?</title>
       <link>https://blog.rowan.website/posts/2018-02-14-why-do-we-need-the-shadow-dom-when-we-have-sass/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2018-02-14-why-do-we-need-the-shadow-dom-when-we-have-sass/</guid>
       <description>n.b. if you&amp;rsquo;re not a web developer and aren&amp;rsquo;t interested in being one, this post may not be for you. lmk if you want a follow-up that&amp;rsquo;ll try to explain things accessibly!</description>
     </item>
     
     <item>
+      <title>Off-silo blog and social reach</title>
+      <link>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2018-02-07-off-silo-blog-and-social-reach/</guid>
+      <description>As expected, when I started writing on a standalone blog instead of long facebook posts, interaction with things I said dropped.
+This is frustrating.
+I think that I&amp;rsquo;m saying better things than I was in long unedited Facebook posts.</description>
+    </item>
+    
+    <item>
+      <title>Self-promotion</title>
+      <link>https://blog.rowan.website/posts/2018-02-07-self-promotion/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2018-02-07-self-promotion/</guid>
+      <description>I hate self-promotion. It feels gross, and it feels like I should be letting people come to me, and it feels like a huge imposition on all of my friends.</description>
+    </item>
+    
+    <item>
+      <title>Braindump on Contra Dancing</title>
+      <link>https://blog.rowan.website/posts/2018-01-19-braindump-on-contra-dancing/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2018-01-19-braindump-on-contra-dancing/</guid>
+      <description>I&amp;rsquo;ve been in the contra scene since I was born; my parents met at a contra dance, and their main social community is based off of it, so it was kind of unavoidable.</description>
+    </item>
+    
+    <item>
+      <title>The Morris Ring is Still an Anti-Feminist Institution</title>
+      <link>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2018-01-12-the-morris-ring/</guid>
+      <description>The Morris Ring. An organization that&amp;rsquo;s been irrelevant to any non-morris dancer, largely irrelevant to any side in the United States, and irrelevant to many dancers in the U.</description>
+    </item>
+    
+    <item>
       <title>controversial opinions, part 1</title>
       <link>https://blog.rowan.website/posts/2018-01-11-controversial-opinions-part-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2018-01-11-controversial-opinions-part-1/</guid>
       <description>alright. friends.
@@ -90,58 +91,9 @@ i&amp;rsquo;ve stayed publicly silent on this great debate for long enough. i ca
     </item>
     
     <item>
-      <title>happy christmas!</title>
-      <link>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</guid>
-      <description>love, rowan and nicki</description>
-    </item>
-    
-    <item>
-      <title>mastodon and coops</title>
-      <link>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</guid>
-      <description>or: why social.coop gets it right i write more about my relationship with mastodon here
-i am sure i&amp;rsquo;m not the first to write about how there&amp;rsquo;s a direct link between the federated social web and cooperative business ideologies.</description>
-    </item>
-    
-    <item>
-      <title>thoughts on the last jedi</title>
-      <link>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</guid>
-      <description>or: since when do i cry at star wars movies
-(spoilers galore)
- the porgs were a delightful minor detail1. i cried in the first five minutes  corrollary: carrie fisher appears in the first five minutes  i really enjoyed this movie kylo ren: just another shirtless mediocre man  yawn.</description>
-    </item>
-    
-    <item>
-      <title>why I join Mastodon</title>
-      <link>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</guid>
-      <description>I&amp;rsquo;ve joined Mastodon four times. The first was in October or November 2016, on mastodon.social, when @shel first joined and told all of her friends; I stuck around for a bit, but only had two or so friends on it (@shel and @ebeth), and I had a large social group on Twitter, so i went back to &amp;lsquo;birdsite&amp;rsquo; (Twitter, per bits of the fediverse).</description>
-    </item>
-    
-    <item>
-      <title>why pylodon exists</title>
-      <link>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</guid>
-      <description>first off: mastodon is amazing and i&amp;rsquo;m so impressed by @gargon&amp;rsquo;s tenacity and brilliance in bringing it to life
-that being said, the biggest weakness that i see with mastodon is how intertwined the frontend and backend are.</description>
-    </item>
-    
-    <item>
       <title>yet another explanation of Mastodon</title>
       <link>https://blog.rowan.website/posts/2018-01-08-yet-another-explanation-of-mastodon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2018-01-08-yet-another-explanation-of-mastodon/</guid>
       <description>The situation: you&amp;rsquo;ve seen people talking about Mastodon. Maybe you&amp;rsquo;re intrigued, maybe you&amp;rsquo;re not. Either way, when they&amp;rsquo;ve tried to explain it to you, you&amp;rsquo;ve been confused, turned off, or maybe even a little angry that they won&amp;rsquo;t shut up about it.</description>
@@ -150,7 +102,7 @@ that being said, the biggest weakness that i see with mastodon is how intertwine
     <item>
       <title>youth trad song weekend 2018</title>
       <link>https://blog.rowan.website/posts/2018-01-08-youth-trad-song-weekend-2k18/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2018-01-08-youth-trad-song-weekend-2k18/</guid>
       <description>another yts, come and gone.
@@ -160,11 +112,60 @@ i remember at the first couple of yts weekends, i went to workshops and led song
     <item>
       <title>yts 2k18 - sound</title>
       <link>https://blog.rowan.website/posts/2018-01-08-yts-2k18-sound/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rowan.website/posts/2018-01-08-yts-2k18-sound/</guid>
       <description>jesus fuckin christ y&amp;rsquo;all i was so stressed on friday
 important note: i don&amp;rsquo;t wish to cast any blame or aspersions on the yts committee.</description>
+    </item>
+    
+    <item>
+      <title>thoughts on the last jedi</title>
+      <link>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2017-12-27-thoughts-on-the-last-jedi/</guid>
+      <description>or: since when do i cry at star wars movies
+(spoilers galore)
+ the porgs were a delightful minor detail1. i cried in the first five minutes  corrollary: carrie fisher appears in the first five minutes  i really enjoyed this movie kylo ren: just another shirtless mediocre man  yawn.</description>
+    </item>
+    
+    <item>
+      <title>happy christmas!</title>
+      <link>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2017-12-26-happy-christmas/</guid>
+      <description>love, rowan and nicki</description>
+    </item>
+    
+    <item>
+      <title>mastodon and coops</title>
+      <link>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2017-12-24-mastodon-and-coops/</guid>
+      <description>or: why social.coop gets it right i write more about my relationship with mastodon here
+i am sure i&amp;rsquo;m not the first to write about how there&amp;rsquo;s a direct link between the federated social web and cooperative business ideologies.</description>
+    </item>
+    
+    <item>
+      <title>why pylodon exists</title>
+      <link>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2017-12-24-why-pylodon-exists/</guid>
+      <description>first off: mastodon is amazing and i&amp;rsquo;m so impressed by @gargon&amp;rsquo;s tenacity and brilliance in bringing it to life
+that being said, the biggest weakness that i see with mastodon is how intertwined the frontend and backend are.</description>
+    </item>
+    
+    <item>
+      <title>why I join Mastodon</title>
+      <link>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rowan.website/posts/2017-12-23-why-i-join-mastodon/</guid>
+      <description>I&amp;rsquo;ve joined Mastodon four times. The first was in October or November 2016, on mastodon.social, when @shel first joined and told all of her friends; I stuck around for a bit, but only had two or so friends on it (@shel and @ebeth), and I had a large social group on Twitter, so i went back to &amp;lsquo;birdsite&amp;rsquo; (Twitter, per bits of the fediverse).</description>
     </item>
     
   </channel>
