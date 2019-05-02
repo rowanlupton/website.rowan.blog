@@ -4,7 +4,7 @@ title: "The Morris Ring is Still an Anti-Feminist Institution"
 date: 2018-01-12
 categories:
 draft: false
-image: "/images/one_ring.jpg"
+image: "/images/cover_images/one_ring.jpg"
 ---
 
 The Morris Ring. An organization that's been irrelevant to any non-morris dancer, largely irrelevant to any side in the United States, and irrelevant to many dancers in the U.K., for a simple reason:

@@ -4,6 +4,7 @@ title: "What the shit is the Shadow DOM, anyway?"
 date: 2018-02-15
 categories:
 draft: false
+image: "/images/cover_images/shadow_DOM.png"
 ---
 
 Shadow DOM: the next frontier in web development.
@@ -51,7 +52,7 @@ html
     | -> div.empty
 ```
 
-![Screen-Shot-2018-02-15-at-8.44.53-AM](/content/images/2018/02/Screen-Shot-2018-02-15-at-8.44.53-AM.png)
+![A Simple Webpage](/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/plain_html.png)
 
 "But Rowan," you're saying, "what's the difference between that tree and the HTML file?"
 
@@ -97,7 +98,7 @@ html
 ```
 because the Javascript removed the content from our `.full` div and added text to our `.empty` one.
 
-![A page that says just "surprise!"](/content/images/2018/02/Screen-Shot-2018-02-15-at-8.45.57-AM.png)
+![A page that says just "surprise!"](/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/surprise.png)
 <small>Please ignore the `<script>` tag in there, I didn't want to fuss with separate files.</small>
 
 The point of this was to illustrate: the DOM is the page _as it is rendered_, not as it is written in the HTML file.
@@ -118,7 +119,7 @@ p {
 ```
 the background color of "Hello world!" and "Goodbye world!" would have been red, and all of the text on the page would have been blue (regardless of which text it was).
 
-![Webpage saying "surprise!" in blue](/content/images/2018/02/Screen-Shot-2018-02-15-at-8.56.27-AM.png)
+![Webpage saying "surprise!" in blue](/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/surprise_blue.png)
 
 This is important. Because we styled `<p>` elements to be blue, _every_ `<p>` element on the page is blue (unless styled otherwise).
 
@@ -174,7 +175,7 @@ input[type='button'] {
 }
 ```
 
-![Two buttons on a page; one is a red circle.](/content/images/2018/02/Screen-Shot-2018-02-15-at-8.48.36-AM.png)
+![Two buttons on a page; one is a red circle.](/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/buttons.png)
 <small>Look at those cute li'l buttons. Cute as two buttons.</small>
 
 This feels a little clunky, but at least it works. There are some ways you can make this better (e.g. SASS), and you could definitely be smarter (for example, if you gave _every_ button a class, you could have completely independent styles — at the cost, of course, that you would be deciding styling in the markup.)
@@ -240,7 +241,7 @@ terrarium.attachShadow({mode: 'open'})
 ```
 
 Now we have two DOMs, each with their own button. If you create this on your own computer, you'll see something like this:
-![Two buttons on a page; one is a red circle.](/content/images/2018/02/Screen-Shot-2018-02-15-at-8.31.21-AM.png)
+![Two buttons on a page; one is a red circle.](/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/buttons_open_shadowRoot.png)
 <small>"Haven't we seen this before?" Check out the inspector!</small>
 
 Starting from the top: you've got a round red button, and an unstyled basic button coming after it, without doing any fuckery in the markup and styling. That's pretty cool on its own.
@@ -250,7 +251,7 @@ Then we'll look at the Inspect view. You can see `#shadow-root (open)` inside of
 There's the root of our Shadow DOM. Everything inside it (in this case, just the `<input type='button'>` element) exists outside the normal DOM.^[Well, sort of. You can apply styles to the Shadow DOM using outside CSS files, but it's much more idiomatic, and useful, to do it from inside, so that you can create a fully self-contained module.]
 
 # Beyond Shadow DOM
-![The Thunderdome, from Mad Max](/content/images/2018/02/thunderdome_flickr.jpg)
+![The Thunderdome, from Mad Max](/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/thunderdome.jpg)
 There's so much more! But not here, not today. If you want to get into the gory details, you'll want to look at things like [HTML imports](https://www.html5rocks.com/en/tutorials/webcomponents/imports/)^[Well, this is extrmely poorly supported across browsers at this point. You'll want to [use a polyfill](https://www.webcomponents.org/polyfills/).] and the [`:host` CSS selector](https://developers.google.com/web/fundamentals/web-components/shadowdom#styling) and really, just read [that whole page](https://developers.google.com/web/fundamentals/web-components/shadowdom).
 
 It's cool stuff! [I'm still not convinced that it's broadly useful, but am coming around after writing this post.](https://blog.rowan.website/2018/02/14/why-do-we-need-the-shadow-dom-when-we-have-sass/) I just had to get over associating Shadow DOM with CSS in JS.
