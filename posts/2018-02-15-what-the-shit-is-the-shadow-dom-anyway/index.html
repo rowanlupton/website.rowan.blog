@@ -36,7 +36,7 @@
     <div class="inner"><section id="single-post">
   <div class="splash-image">
     
-    <img src="https://placekitten.com/1500/1000" />
+    <img src="/images/cover_images/shadow_DOM.png" />
   </div>
   <div class="content">
     <h1>What the shit is the Shadow DOM, anyway?</h1>
@@ -88,7 +88,7 @@
     | -&gt; div.empty
 </code></pre>
 
-<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.44.53-AM.png" alt="Screen-Shot-2018-02-15-at-8.44.53-AM" /></p>
+<p><img src="/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/plain_html.png" alt="A Simple Webpage" /></p>
 
 <p>&ldquo;But Rowan,&rdquo; you&rsquo;re saying, &ldquo;what&rsquo;s the difference between that tree and the HTML file?&rdquo;</p>
 
@@ -133,7 +133,7 @@ document.querySelector('.empty').innerHTML = '&lt;p&gt;surprise!&lt;/p&gt;';
 
 <p>because the Javascript removed the content from our <code>.full</code> div and added text to our <code>.empty</code> one.</p>
 
-<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.45.57-AM.png" alt="A page that says just &quot;surprise!&quot;" />
+<p><img src="/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/surprise.png" alt="A page that says just &quot;surprise!&quot;" />
 <small>Please ignore the <code>&lt;script&gt;</code> tag in there, I didn&rsquo;t want to fuss with separate files.</small></p>
 
 <p>The point of this was to illustrate: the DOM is the page <em>as it is rendered</em>, not as it is written in the HTML file.</p>
@@ -156,7 +156,7 @@ p {
 
 <p>the background color of &ldquo;Hello world!&rdquo; and &ldquo;Goodbye world!&rdquo; would have been red, and all of the text on the page would have been blue (regardless of which text it was).</p>
 
-<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.56.27-AM.png" alt="Webpage saying &quot;surprise!&quot; in blue" /></p>
+<p><img src="/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/surprise_blue.png" alt="Webpage saying &quot;surprise!&quot; in blue" /></p>
 
 <p>This is important. Because we styled <code>&lt;p&gt;</code> elements to be blue, <em>every</em> <code>&lt;p&gt;</code> element on the page is blue (unless styled otherwise).</p>
 
@@ -213,7 +213,7 @@ input[type='button'] {
 }
 </code></pre>
 
-<p><img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.48.36-AM.png" alt="Two buttons on a page; one is a red circle." />
+<p><img src="/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/buttons.png" alt="Two buttons on a page; one is a red circle." />
 <small>Look at those cute li&rsquo;l buttons. Cute as two buttons.</small></p>
 
 <p>This feels a little clunky, but at least it works. There are some ways you can make this better (e.g. SASS), and you could definitely be smarter (for example, if you gave <em>every</em> button a class, you could have completely independent styles — at the cost, of course, that you would be deciding styling in the markup.)</p>
@@ -279,7 +279,7 @@ terrarium.attachShadow({mode: 'open'})
 </code></pre>
 
 <p>Now we have two DOMs, each with their own button. If you create this on your own computer, you&rsquo;ll see something like this:
-<img src="/content/images/2018/02/Screen-Shot-2018-02-15-at-8.31.21-AM.png" alt="Two buttons on a page; one is a red circle." />
+<img src="/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/buttons_open_shadowRoot.png" alt="Two buttons on a page; one is a red circle." />
 <small>&ldquo;Haven&rsquo;t we seen this before?&rdquo; Check out the inspector!</small></p>
 
 <p>Starting from the top: you&rsquo;ve got a round red button, and an unstyled basic button coming after it, without doing any fuckery in the markup and styling. That&rsquo;s pretty cool on its own.</p>
@@ -290,7 +290,7 @@ terrarium.attachShadow({mode: 'open'})
 
 <h1 id="beyond-shadow-dom">Beyond Shadow DOM</h1>
 
-<p><img src="/content/images/2018/02/thunderdome_flickr.jpg" alt="The Thunderdome, from Mad Max" />
+<p><img src="/images/2018-02-15-what-the-shit-is-the-shadow-dom-anyway/thunderdome.jpg" alt="The Thunderdome, from Mad Max" />
 There&rsquo;s so much more! But not here, not today. If you want to get into the gory details, you&rsquo;ll want to look at things like <a href="https://www.html5rocks.com/en/tutorials/webcomponents/imports/">HTML imports</a><sup class="footnote-ref" id="fnref:Well-this-is-ext"><a href="#fn:Well-this-is-ext">3</a></sup> and the <a href="https://developers.google.com/web/fundamentals/web-components/shadowdom#styling"><code>:host</code> CSS selector</a> and really, just read <a href="https://developers.google.com/web/fundamentals/web-components/shadowdom">that whole page</a>.</p>
 
 <p>It&rsquo;s cool stuff! <a href="https://blog.rowan.website/2018/02/14/why-do-we-need-the-shadow-dom-when-we-have-sass/">I&rsquo;m still not convinced that it&rsquo;s broadly useful, but am coming around after writing this post.</a> I just had to get over associating Shadow DOM with CSS in JS.</p>
